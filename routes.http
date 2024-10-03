@@ -1,0 +1,41 @@
+POST http://localhost:3333/users
+Content-Type: application/json
+
+{
+    "name": "Vagnei",
+    "email": "vagnei@email.com"
+}
+
+### 
+POST http://localhost:3333/contacts
+Content-Type: application/json
+Email: vagnei@email.com 
+
+{
+    "name": "Finaaa",
+    "email": "finaaaa@email.com",
+    "phone": "12345689"
+}
+
+
+###
+GET http://localhost:3333/users
+
+###
+GET http://localhost:3333/contacts
+Email: vagnei@email.com 
+
+### 
+PUT http://localhost:3333/contacts/c1b81e1e-39b5-4e96-8410-2222d9acd603
+Content-Type: application/json
+Email: vagnei@email.com 
+
+{
+    "name": "TESTE",
+    "email": "testando@email.com",
+    "phone": "123"
+}
+
+### 
+DELETE http://localhost:3333/contacts/7eae3586-ff1a-4809-999d-9304758b9fe2
+Email: vagnei@email.com 
